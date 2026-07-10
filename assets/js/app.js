@@ -266,10 +266,10 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
     subject: 'Taller Gráfico I',
     icon: '⛰️',
     year: '2026',
-    parte: 'Proyecto final · Examen',
+    parte: 'Examen',
     tags: ['Examen', 'Taller Gráfico I', 'Aconcagua', 'Naturaleza como fuerza superior'],
     description: 'Fondo general del proyecto con todos los archivos actualizados del examen: galerías de imágenes, visores PDF, visor 3D y videos.',
-    cover: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-1.JPG',
+    cover: 'assets/proyectos/examen-tg1/imgs/final/cover.JPG',
 
     gallery: [
       { src: 'assets/proyectos/examen-tg1/imgs/13_-Latina-Producciones_-LOS-JAIVAS-GRUPO-MUSICAL-_-CONTRATACIONES_-CANTANTES-PARA-EVENTOS_-SHOW-MUSICAL_-SHOW-ON-LINE_-PRESENTACIONES-PRIVADAS_-CONTRATACIONES-CHILE_-scaled.jpg', caption: '13_-Latina-Producciones' },
