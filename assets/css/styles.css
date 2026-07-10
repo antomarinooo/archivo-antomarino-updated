@@ -99,9 +99,11 @@ body {
   border-radius: 2px;
 }
 
+/* En la Sección 2) Modifique la regla de .shell */
 .shell {
   display: flex;
   min-height: 100vh;
+  align-items: flex-start; /* IMPORTANTE: Permite que la sidebar flote de forma independiente */
 }
 
 @keyframes site-enter {
@@ -146,9 +148,14 @@ body {
   background: #fcfcfd;
   border: 1px solid var(--border);
   border-radius: 12px;
-  position: fixed;
+  
+  /* CAMBIO AQUÍ: Usar sticky en lugar de fixed para respetar el flujo flex */
+  position: -webkit-sticky;
+  position: sticky;
   top: var(--sidebar-float-offset-y);
   left: var(--sidebar-float-offset-x);
+  
+  /* Ajuste de altura dinámica con scroll interno si el menú es muy largo */
   height: calc(100vh - (var(--sidebar-float-offset-y) * 2));
   z-index: 50;
   display: flex;
@@ -270,14 +277,18 @@ body {
 
 /* ========== 4) Layout principal ========== */
 /* Nota: contenedor principal y topbar visible en mobile. */
+/* En la Sección 4) Modifique el margen izquierdo de .main */
 .main {
-  margin-left: calc(var(--sidebar-float-offset-x) + var(--sidebar-width) + var(--sidebar-main-gap));
+  /* Al cambiar a sticky, el margen solo requiere considerar el ancho y la separación */
+  margin-left: calc(var(--sidebar-float-offset-x) + var(--sidebar-main-gap));
   flex: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #ffffff;
 }
+
+
 
 .topbar {
   display: none;

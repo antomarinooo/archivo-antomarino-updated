@@ -54,7 +54,7 @@ function buildExtendaVariants() {
 const PROJECTS = [
   {
     id: 'p1',
-    number: '01',
+    number: '02',
     title: 'Identidad Visual Perro Caliente',
     subject: 'Taller Gráfico I',
     icon: '🗄️',
@@ -261,7 +261,7 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
   },
   {
     id: 'p2',
-    number: '02',
+    number: '01',
     title: 'Examen Taller Gráfico I',
     subject: 'Taller Gráfico I',
     icon: '⛰️',
@@ -308,9 +308,6 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
       { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-3.jpg', caption: 'aconcagua-3' },
       { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-4.jpg', caption: 'aconcagua-4' },
       { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-5.jpg', caption: 'aconcagua-5' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-6.jpg', caption: 'aconcagua-6' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-7.jpg', caption: 'aconcagua-7' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-8.jpg', caption: 'aconcagua-8' },
     ],
 
     mainVideo: {
@@ -321,7 +318,6 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
 
     videos: [
       { title: 'video-pieza-editorial', src: 'assets/proyectos/examen-tg1/videos/video-pieza-editorial.MP4', type: 'video/mp4' },
-      { title: 'video-proceso', src: 'assets/proyectos/examen-tg1/videos/video-proceso.mp4', type: 'video/mp4' },
     ],
 
     finalImages: [
@@ -336,39 +332,42 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
 
     pdfSections: [
       {
-        title: 'pieza-editorial',
-        scope: 'pieza-editorial',
+        title: 'Documentos del Proyecto y Pieza Editorial',
+        scope: 'laminas-unificadas',
         pdfs: [
           {
-            src: 'assets/proyectos/examen-tg1/pdfs/pieza-editorial.pdf',
-            label: 'pieza-editorial.pdf',
+            src: 'assets/proyectos/examen-tg1/pdfs/lamina-investigacion.pdf',
+            label: 'lamina-investigacion.pdf'
           },
-        ],
-      },
-      {
-        title: 'Láminas PDF',
-        scope: 'laminas',
-        pdfs: [
           {
             src: 'assets/proyectos/examen-tg1/pdfs/lamina-final.pdf',
-            label: 'lamina-final.pdf',
+            label: 'lamina-final.pdf'
           },
           {
             src: 'assets/proyectos/examen-tg1/pdfs/planimetr%C3%ADa%20versi%C3%B3n%201.pdf',
-            label: 'planimetría versión 1.pdf',
+            label: 'planimetría versión 1.pdf'
           },
-        ],
-      },
+          {
+            src: 'assets/proyectos/examen-tg1/pdfs/pieza-editorial.pdf',
+            label: 'pieza-editorial.pdf'
+          }
+        ]
+      }
     ],
 
     model3d: {
       title: 'Modelo 3D del Aconcagua',
       src: 'assets/proyectos/examen-tg1/otros/aconcagua.stl',
     },
-
-    stage1: {
-      title: 'Fondo general del proyecto',
-      description: 'Repositorio del proyecto Fluxkit, desarrollado para Taller Gráfico I. Explora el concepto de la naturaleza como fuerza superior mediante un contenedor editorial que integra una representación tridimensional del Aconcagua, poesía y diseño gráfico.'
+stage1: {
+      title: 'Aspectos generales proyecto',
+      description: 'Repositorio del proyecto Fluxkit, desarrollado para Taller Gráfico I. Basado en el concepto de la naturaleza como fuerza superior mediante un contenedor editorial que integra una representación tridimensional del Aconcagua, poesía y diseño gráfico.'
+    },
+    // Nueva propiedad para la información institucional
+    infoAdicional: {
+      docentes: 'Andrea Torres, Ignacia Santillán',
+      anoAcademico: '2026',
+      institucion: 'Universidad del Desarrollo'
     },
     references: [
       { text: 'Consult Packaging. (2024). The Roachambeau Club - Presentation Boxes.', url: 'https://www.behance.net/gallery/212331937/The-Roachambeau-Club-Presentation-Boxes' },
@@ -382,9 +381,9 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
   },
   /* ─── Acá agregar más proyectos ─── */
 ];
-
-const ACTIVE_PROJECTS = PROJECTS.filter((project) => !project.archived);
-const ARCHIVED_PROJECTS = PROJECTS.filter((project) => project.archived);
+// Filtra el proyecto para que permanezca en los datos locales pero no se renderice en la web
+const ACTIVE_PROJECTS = PROJECTS.filter((project) => !project.archived && project.id !== 'p1');
+const ARCHIVED_PROJECTS = [];
 /* ════════════════════════════════════════════════════
    FIN DE DATOS
    ════════════════════════════════════════════════════ */
@@ -532,6 +531,31 @@ function renderProject(p) {
     html += `<div class="callout">${p.callout.icon ? `<span class="callout-icon">${p.callout.icon}</span>` : ''}<div class="callout-body">${p.callout.text}</div></div>`;
   }
 
+  if (p.infoAdicional) {
+    html += `
+    <div class="section">
+      <div class="section-label">Información Institucional</div>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-family: var(--font); font-size: 14px;">
+        <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+          <td style="padding: 10px 0; font-weight: 600; color: #111; width: 30%;">Año Académico:</td>
+          <td style="padding: 10px 0; color: #444;">${esc(p.infoAdicional.anoAcademico || '')}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+          <td style="padding: 10px 0; font-weight: 600; color: #111;">Docentes Guías:</td>
+          <td style="padding: 10px 0; color: #444;">${esc(p.infoAdicional.docentes || '')}</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+          <td style="padding: 10px 0; font-weight: 600; color: #111;">Institución:</td>
+          <td style="padding: 10px 0; color: #444;">${esc(p.infoAdicional.institucion || '')}</td>
+        </tr>
+      </table>
+    </div>`;
+  }
+
+  if (p.pdfs?.length) {
+    html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
+  }
+
   html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
 
   if (p.pdfs?.length) {
@@ -653,6 +677,14 @@ function renderProject(p) {
   }
 
   viewRoot.innerHTML = html + footerHTML();
+
+  // Asignar la función de regresar al inicio al presionar el botón
+  const backBtn = document.getElementById('back-btn');
+  if (backBtn) {
+    backBtn.addEventListener('click', () => {
+      navigate('home');
+    });
+  }
 
   setupGalleryInteractions();
   setupTypographyViewer(p.id);
@@ -1251,7 +1283,7 @@ function footerHTML(){
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             GitHub
           </a>
-          <a href="https://www.instagram.com/fusefolio/" target="_blank" rel="noopener" class="footer-social">
+          <a href="https://www.instagram.com/archivoantoo/" target="_blank" rel="noopener" class="footer-social">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             Instagram
           </a>
