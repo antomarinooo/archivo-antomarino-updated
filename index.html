@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Archivo Anto Marino</title>
+<link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lb-nav" id="lb-prev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg></button>
+  <img class="lb-img" id="lb-img" alt=""/>
+  <button class="lb-nav" id="lb-next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button>
+  <div class="lb-caption" id="lb-caption"></div>
+  <div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebar-close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <div class="sidebar-header">
+      <div class="sidebar-brand">Archivo Anto Marino</div>
+      <div class="sidebar-tagline">Proyectos de diseño 2025–2026</div>
+    </div>
+    <div class="sidebar-scroll"><nav id="sidebar-nav"></nav></div>
+  </aside>
+
+  <div class="main" id="main">
+    <header class="topbar">
+      <button class="hamburger" id="hamburger"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
+      <span class="topbar-name" id="topbar-name">Inicio</span>
+      <div style="width:30px;flex-shrink:0"></div>
+    </header>
+    <div id="view-root"></div>
+  </div>
+</div>
+
+<button class="scroll-fab hidden" id="scroll-fab" aria-label="Ir abajo" title="Ir abajo">
+  <span class="scroll-fab-icon" id="scroll-fab-icon">↓</span>
+</button>
+
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
