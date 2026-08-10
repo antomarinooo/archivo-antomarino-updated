@@ -379,6 +379,50 @@ stage1: {
       { text: 'Studio GAGA. (2020). Bridge Making Exhibition.', url: 'https://www.behance.net/gallery/105851653/Bridge-Making-Exhibition' },
     ],
   },
+  {
+    id: 'p3',
+    number: '03',
+    title: 'Proyecto Flora Nativa Chilena',
+    subject: 'Taller Gráfico II',
+    icon: '🌿',
+    year: '2026',
+    parte: 'Galería y referencias',
+    tags: ['flora nativa', 'biodiversidad', 'Chile', 'Sistema gráfico'],
+    description: 'Proyecto de investigación visual sobre la flora nativa chilena. \n\nDocentes:\nAndrea Torres e Ignacia Santillán',
+    cover: 'assets/proyectos/proyecto-flora-nativa-chilena/img/alerce%20milenario.jpg',
+    gallery: [
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Alerce-milenario3_AMF.jpg', caption: 'Alerce milenario' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/alerce%20milenario.jpg', caption: 'Alerce milenario' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/araucaria.jpg', caption: 'Araucaria' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/bosque%20magallanico.jpg', caption: 'Bosque magallánico' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/ciprés.jpg', caption: 'Ciprés de las Guaitecas' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Coriaria_ruscifolia_subsp_microphylla_Irazu_2.jpg', caption: 'Coriaria ruscifolia' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/DSC08613-450x600.jpg', caption: 'Flora nativa chilena' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Jubaea-chilensis-1-PN-La-Campana.jpg', caption: 'Jubaea chilensis' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Lobelia-tupa-Polopue-MTE-1.jpg', caption: 'Lobelia tupa' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Lobelia-tupa-flor-1-Jeronimo-Valdes-1024x680.jpg', caption: 'Flor de Lobelia tupa' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/latue-pubiflora-huellelhue-rio-negro-los-lagos-jul-2021-5.jpg', caption: 'Latue' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/litre-cri-11.jpg', caption: 'Litre' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Pilgerodendron_uviferum.jpg', caption: 'Pilgerodendron uviferum' },
+      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Prosopis-tamarugal_OW_2014a.jpg', caption: 'Prosopis tamarugo' },
+    ],
+    showOnlyGalleryAndReferences: true,
+    references: [
+      { text: 'Agencia SINC. (2023, 7 de noviembre). El gran abuelo de los alerces continúa a salvo.', url: 'https://www.agenciasinc.es/Reportajes/El-gran-abuelo-de-los-alerces-continua-a-salvo' },
+      { text: 'Chile Travel. (2024, 4 de julio). Conoce el árbol más viejo del mundo: Trekking en el Parque Nacional Alerce Costero.', url: 'https://chile.travel/blog/conoce-el-arbol-mas-viejo-del-mundo-trekking-en-el-parque-nacional-alerce-costero/' },
+      { text: 'Chilebosque. (s. f.). Coriaria ruscifolia: Matarratones, Deu.', url: 'https://www.chilebosque.cl/epiv/coriaria_ruscifolia.html' },
+      { text: 'Fundación Chilena de Endemismos & Royal Botanic Gardens, Kew. (s. f.). Strombocarpa tamarugo (Phil.) C.E. Hughes & G.P. Lewis. Las plantas endémicas de Chile.', url: 'https://chileanendemics.rbge.org.uk/es/taxa/strombocarpa-tamarugo-phil-c-e-hughes-g-p-lewis' },
+      { text: 'Instituto de Salud Pública de Chile. (2023). Lobelia tupa.', url: 'https://www.ispch.cl/wp-content/uploads/2023/03/Lobelia-tupa-21022023A.pdf' },
+      { text: 'Ladera Sur. (2024, 28 de mayo). Araucaria: El árbol sagrado que es memoria viva y se resiste a desaparecer.', url: 'https://laderasur.com/articulo/especial-chile-araucaria-el-arbol-sagrado-que-es-memoria-viva-y-se-resiste-a-desaparecer/' },
+      { text: 'Ministerio del Medio Ambiente. (2018). Biodiversidad de Chile: Patrimonio y desafíos (3.ª ed.).', url: 'https://mma.gob.cl/wp-content/uploads/2020/10/Biodiversidad-LIBRO-REUNIDO-FINAL-web.pdf' },
+      { text: 'Meteored. (2024, 21 de marzo). El ciprés de las Guaitecas: Conoce al árbol del sur de Chile que puede vivir hasta 800 años.', url: 'https://www.meteored.cl/noticias/actualidad/el-cipres-de-las-guaitecas-conoce-al-arbol-del-sur-de-chile-que-puede-vivir-hasta-800-anos.html' },
+      { text: 'Ñuble Naturaleza. (s. f.). Palqui.', url: 'https://www.nublenaturaleza.cl/articulos/flora/arbustos/palqui' },
+      { text: 'País Circular. (2021, 22 de diciembre). Palma chilena podría extinguirse por acción de roedores exóticos si no se toman medidas urgentes.', url: 'https://www.paiscircular.cl/biodiversidad/palma-chilena-podria-extinguirse-por-accion-de-roedores-exoticos-si-no-se-toman-medidas-urgentes/' },
+      { text: 'Pumahuida. (s. f.). Lobelia tupa.', url: 'https://www.pumahuida.cl/especies/lobelia-tupa/' },
+      { text: 'nautico_sur. (s. f.). Bosque Magallánico. Instagram.', url: 'https://www.instagram.com/p/DXp8KiejFTy/?img_index=4' },
+      { text: 'YerbATECA. (s. f.). Palqui (Cestrum parqui): Para qué sirve y 8 usos.', url: 'https://yerbateca.org/plantas/cestrum-parqui/' },
+    ],
+  },
   /* ─── Acá agregar más proyectos ─── */
 ];
 // Filtra el proyecto para que permanezca en los datos locales pero no se renderice en la web
@@ -507,7 +551,8 @@ function renderHome() {
 
 function renderProject(p) {
   const projectDesc = esc(p.description || '').replace(/\n/g, '<br>');
-  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="lazy" decoding="async" fetchpriority="low"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
+  const isMinimalProject = !!p.showOnlyGalleryAndReferences;
+  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>${img.caption ? `<div class="gallery-thumb-meta">${esc(img.caption)}</div>` : ''}</div>`;
   const renderImageSection = (title, images) => {
     if (!images?.length) return '';
     return `<div class="section"><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid">${images.map((img) => galleryThumbHTML(img)).join('')}</div></div>`;
@@ -531,7 +576,7 @@ function renderProject(p) {
     html += `<div class="callout">${p.callout.icon ? `<span class="callout-icon">${p.callout.icon}</span>` : ''}<div class="callout-body">${p.callout.text}</div></div>`;
   }
 
-  if (p.infoAdicional) {
+  if (p.infoAdicional && !isMinimalProject) {
     html += `
     <div class="section">
       <div class="section-label">Información Institucional</div>
@@ -552,17 +597,19 @@ function renderProject(p) {
     </div>`;
   }
 
-  if (p.pdfs?.length) {
+  if (p.pdfs?.length && !isMinimalProject) {
     html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
   }
 
-  html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
+  if (!isMinimalProject) {
+    html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
+  }
 
-  if (p.pdfs?.length) {
+  if (p.pdfs?.length && !isMinimalProject) {
     html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
   }
 
-  if (p.pdfSections?.length) {
+  if (!isMinimalProject && p.pdfSections?.length) {
     p.pdfSections.forEach((section, index) => {
       if (section?.pdfs?.length) {
         html += renderPdfSection(p.id, section.title || `PDF ${index + 1}`, section.pdfs, section.scope || `custom-${index}`);
@@ -570,13 +617,13 @@ function renderProject(p) {
     });
   }
 
-  if (p.text?.trim()) html+=`<div class="section"><div class="section-label">Contenido de la investigación</div><div class="prose">${marked.parse(p.text)}</div></div>`;
+  if (!isMinimalProject && p.text?.trim()) html+=`<div class="section"><div class="section-label">Contenido de la investigación</div><div class="prose">${marked.parse(p.text)}</div></div>`;
 
-  if (p.textMedia?.length) {
+  if (!isMinimalProject && p.textMedia?.length) {
     html += `<div class="section"><div class="section-label">Fotos de apoyo</div><div class="support-grid">${p.textMedia.map((item, idx) => `<figure class="support-card support-card-${(idx % 3) + 1}"><img src="${esc(item.src)}" alt="${esc(item.caption || '')}" loading="lazy" decoding="async"/><figcaption>${esc(item.caption || '')}</figcaption></figure>`).join('')}</div></div>`;
   }
 
-  if (p.svgViewer?.src) {
+  if (!isMinimalProject && p.svgViewer?.src) {
     html += `<div class="section"><div class="section-label">${esc(p.svgViewer.title || 'Visualizador SVG')}</div><figure class="svg-viewer"><img src="${esc(p.svgViewer.src)}" alt="${esc(p.svgViewer.caption || p.svgViewer.title || 'SVG')}" loading="lazy" decoding="async"/></figure></div>`;
   }
 
@@ -585,11 +632,11 @@ function renderProject(p) {
     ...(p.verticalVideos || []).map((video) => ({ ...video, vertical: true })),
   ];
 
-  if (p.mainVideo?.src) {
+  if (!isMinimalProject && p.mainVideo?.src) {
     html += `<div class="section"><div class="section-label">Video principal</div><article class="video-main"><div class="video-frame"><video controls playsinline preload="metadata" data-video-thumb data-video-src="${esc(p.mainVideo.src)}"><source src="${esc(p.mainVideo.src)}" type="${esc(p.mainVideo.type || 'video/mp4')}"></video></div><div class="media-caption"><span>${esc(p.mainVideo.title || 'Video principal')}</span></div></article></div>`;
   }
 
-  if (videoGallery.length) {
+  if (!isMinimalProject && videoGallery.length) {
     html += `<div class="section"><div class="section-label">Galería de video</div><div class="video-grid">${videoGallery.map((video, idx) => {
       const hasSrc = !!video.src;
       const videoClass = video.vertical ? ' video-card-vertical' : '';
@@ -599,23 +646,25 @@ function renderProject(p) {
   }
 
   html += renderImageSection('Galería', p.gallery);
-  html += renderImageSection('Referentes', p.referentes);
-  html += renderImageSection('Fotos Aconcagua', p.aconcaguaImages);
-  html += renderImageSection('Fotos finales', p.finalImages);
+  if (!isMinimalProject) {
+    html += renderImageSection('Referentes', p.referentes);
+    html += renderImageSection('Fotos Aconcagua', p.aconcaguaImages);
+    html += renderImageSection('Fotos finales', p.finalImages);
+  }
 
-  if (p.model3d) {
+  if (!isMinimalProject && p.model3d) {
     const modelStageId = `model-stage-${p.id}`;
     const modelSrc = p.model3d.src || '';
     html += `<div class="section"><div class="model-viewer model-viewer-full"><div class="model-scene${modelSrc ? ' model-scene-stl' : ''}"${modelSrc ? ` id="${modelStageId}" data-stl-viewer="${p.id}" data-stl-src="${esc(modelSrc)}"` : ''} aria-label="${esc(p.model3d.title || 'Visualizador 3D')}">${modelSrc ? `<div class="model-loading" aria-hidden="true"><div class="model-loading-text">El visor 3D se activa solo cuando pulses “Ver modelo 3D”.</div><button class="btn btn-outline btn-sm" type="button" data-stl-open="${p.id}">Ver modelo 3D</button></div>` : `<div class="model-cube"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>`}</div></div></div>`;
   }
 
-  if (p.timeline?.length) {
+  if (!isMinimalProject && p.timeline?.length) {
     html+=`<div class="section"><div class="section-label">Proceso de trabajo</div><div class="timeline">${
       p.timeline.map(t=>`<div class="tl-item"><div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div><div class="tl-content"><div class="tl-title">${t.title}</div><div class="tl-subtitle">${t.desc}</div></div></div>`).join('')
     }</div></div>`;
   }
 
-  if (p.downloads?.length) {
+  if (!isMinimalProject && p.downloads?.length) {
     html+=`<div class="section"><div class="section-label">Descargables</div><div class="downloads-list">${
       p.downloads.map(d=>`<a class="dl-row" href="${esc(d.url)}" download target="_blank" rel="noopener">
         <div class="dl-ext ${d.ext.toLowerCase()}">${esc(d.ext)}</div>
@@ -626,7 +675,7 @@ function renderProject(p) {
     }</div></div>`;
   }
 
-  if (p.stage2) {
+  if (!isMinimalProject && p.stage2) {
     html += `<div class="section"><div class="section-label">${esc(p.stage2.title)}</div>${p.stage2.description?.trim() ? `<div class="prose">${marked.parse(p.stage2.description)}</div>` : ''}</div>`;
 
     if (p.stage2.pdfs?.length) {
@@ -634,7 +683,7 @@ function renderProject(p) {
     }
   }
 
-  if (p.typography?.fonts?.length) {
+  if (!isMinimalProject && p.typography?.fonts?.length) {
     const typeInputId = `type-preview-input-${p.id}`;
     const defaultSample = esc(p.typography.sample || 'REBALSE');
     html += `<div class="section">
@@ -1291,7 +1340,7 @@ function footerHTML(){
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© ${new Date().getFullYear()} Anto Marino — Todos los derechos reservados</p>
+      <p class="footer-copy">© ${new Date().getFullYear()} - Anto Marino</p>
       <div class="footer-tech">
         <span class="footer-tech-label">Hecho con</span>
         <span class="footer-tech-item">HTML</span>
