@@ -230,6 +230,13 @@ body {
   background: var(--accent);
   color: var(--accent-foreground);
 }
+  .pdf-embed {
+    display: block;
+    width: 100%;
+    min-height: 360px;
+    border: 0;
+    background: #fff;
+  }
 
 .sb-item.active {
   background: var(--accent);
@@ -818,6 +825,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  touch-action: manipulation;
 }
 
 .gallery-thumb img {
@@ -840,6 +848,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .gallery-thumb:hover .gallery-thumb-overlay {
@@ -850,6 +859,7 @@ body {
   opacity: 0;
   color: #fff;
   transition: opacity 0.2s;
+  pointer-events: none;
 }
 
 .gallery-thumb:hover .gallery-thumb-overlay svg {

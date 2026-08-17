@@ -48,6 +48,16 @@ function buildExtendaVariants() {
 
   return variants;
 }
+
+function buildSequentialGallery(basePath, prefix, total, captionPrefix) {
+  return Array.from({ length: total }, (_, index) => {
+    const number = index + 1;
+    return {
+      src: encodeURI(`${basePath}/${prefix}-${number}.jpg`),
+      caption: `${captionPrefix} ${number}`,
+    };
+  });
+}
 /* ════════════════════════════════════════════════════
    DATOS — Editá aquí para agregar o cambiar proyectos
    ════════════════════════════════════════════════════ */
@@ -398,48 +408,110 @@ stage1: {
     tags: ['flora nativa', 'biodiversidad', 'Chile', 'Sistema gráfico'],
     description: 'Proyecto de investigación visual sobre la flora nativa chilena. \n\nDocentes:\nAndrea Torres e Ignacia Santillán',
     cover: 'assets/proyectos/proyecto-flora-nativa-chilena/img/alerce%20milenario.jpg',
-    gallery: [
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Alerce-milenario3_AMF.jpg', caption: 'Alerce milenario' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/alerce%20milenario.jpg', caption: 'Alerce milenario' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/araucaria.jpg', caption: 'Araucaria' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/bosque%20magallanico.jpg', caption: 'Bosque magallánico' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/ciprés.jpg', caption: 'Ciprés de las Guaitecas' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Coriaria_ruscifolia_subsp_microphylla_Irazu_2.jpg', caption: 'Coriaria ruscifolia' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/DSC08613-450x600.jpg', caption: 'Flora nativa chilena' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Jubaea-chilensis-1-PN-La-Campana.jpg', caption: 'Jubaea chilensis' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Lobelia-tupa-Polopue-MTE-1.jpg', caption: 'Lobelia tupa' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Lobelia-tupa-flor-1-Jeronimo-Valdes-1024x680.jpg', caption: 'Flor de Lobelia tupa' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/latue-pubiflora-huellelhue-rio-negro-los-lagos-jul-2021-5.jpg', caption: 'Latue' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/litre-cri-11.jpg', caption: 'Litre' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Pilgerodendron_uviferum.jpg', caption: 'Pilgerodendron uviferum' },
-      { src: 'assets/proyectos/proyecto-flora-nativa-chilena/img/Prosopis-tamarugal_OW_2014a.jpg', caption: 'Prosopis tamarugo' },
+    gallerySections: [
+      {
+        title: 'Guayacán',
+        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/guayacan', 'guayacan', 35, 'Guayacán'),
+      },
+      {
+        title: 'Pata de guanaco',
+        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/pata de guanaco', 'patadeguanaco', 32, 'Pata de guanaco'),
+      },
+      {
+        title: 'Yareta',
+        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/yareta', 'yareta', 14, 'Yareta'),
+      },
+      {
+        title: 'Tamarugo',
+        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/tamarugo', 'tamarugo', 15, 'Tamarugo'),
+      },
+    ],
+    pdfSections: [
+      {
+        title: 'Lámina investigativa',
+        scope: 'lamina-investigacion',
+        pdfs: [
+          {
+            src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/lamina-investigacion.pdf',
+            label: 'Lámina investigativa',
+            description: 'PDF con el visor integrado de la lámina de investigación',
+          },
+        ],
+      },
+      {
+        title: 'Sistema gráfico',
+        scope: 'sistema-grafico',
+        pdfs: [
+          {
+            src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/sistema-grafico.pdf',
+            label: 'Sistema gráfico',
+            description: 'PDF con el visor integrado del sistema gráfico',
+          },
+        ],
+      },
+      {
+        title: 'Ficha técnica',
+        scope: 'ficha-tecnica',
+        pdfs: [
+          {
+            src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/ficha-tecnica.pdf',
+            label: 'Ficha técnica',
+            description: 'PDF con el visor integrado de la ficha técnica',
+          },
+        ],
+      },
     ],
     showOnlyGalleryAndReferences: true,
   references: [
-  { text: 'Agencia SINC. (2023, 7 de noviembre). El gran abuelo de los alerces continúa a salvo.', url: 'https://www.agenciasinc.es/Reportajes/El-gran-abuelo-de-los-alerces-continua-a-salvo' },
   { text: 'Academia del Paisaje. (2026, 7 de mayo). Cómo restaurar ecosistemas mediante el rescate de flora nativa.', url: 'https://www.academiapaisaje.org/post/restauracion-y-rescate-de-flora-nativa' },
+  { text: 'Agencia SINC. (2023, 7 de noviembre). El gran abuelo de los alerces continúa a salvo.', url: 'https://www.agenciasinc.es/Reportajes/El-gran-abuelo-de-los-alerces-continua-a-salvo' },
+  { text: 'Berger, M. (2019). Prosopis tamarugo [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/36395818' },
   { text: 'Bioilustraciones.cl. (s. f.). Bioilustraciones.cl [Instagram].', url: 'https://www.instagram.com/bioilustraciones.cl/' },
+  { text: 'Broodryk, K. (s. f.). Close-up flowers yareta plant, also known as cushion llareta (Azorella compacta) located Altiplano Bolivia [Fotografía]. Dreamstime.', url: 'https://www.dreamstime.com/close-up-flowers-yareta-plant-also-known-as-cushion-llareta-azorella-compacta-located-altiplano-bolivia-image299901857' },
+  { text: 'Charif_tala. (2024). Flor de Prosopis tamarugo [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/205991864' },
   { text: 'Chile es TUYO. (2021, 15 de octubre). Flora endémica de Chile: Nuestra propia naturaleza.', url: 'https://chileestuyo.cl/flora-endemica-de-chile-nuestra-propia-naturaleza/' },
   { text: 'Chile Travel. (2024, 4 de julio). Conoce el árbol más viejo del mundo: Trekking en el Parque Nacional Alerce Costero.', url: 'https://chile.travel/blog/conoce-el-arbol-mas-viejo-del-mundo-trekking-en-el-parque-nacional-alerce-costero/' },
   { text: 'Chilebosque. (s. f.). Coriaria ruscifolia: Matarratones, Deu.', url: 'https://www.chilebosque.cl/epiv/coriaria_ruscifolia.html' },
   { text: 'Círculo de Ilustradores Naturalistas de Chile. (s. f.). Galería [Galería de ilustraciones].', url: 'https://ilustradoresnatura.wixsite.com/cinc/galeria' },
+  { text: 'Deutsche Welle. (2025, 9 de octubre). “Pata de guanaco”: La flor que vence la sequía del desierto.', url: 'https://www.dw.com/es/pata-de-guanaco-la-flor-que-vence-la-sequ%C3%ADa-del-desierto/a-74295406' },
   { text: 'EcoCamp Patagonia. (2022, 4 de octubre). Flora nativa de la Patagonia.', url: 'https://www.ecocamp.travel/es/flora-nativa-de-la-patagonia' },
+  { text: 'eltontitodelosbichos. (2026, 11 de agosto). Porlieria chilensis [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/390471470' },
+  { text: 'Enterrios, M. (2026). Pattern illustration | Bridgerton x Williams Sonoma. Behance.', url: 'https://www.behance.net/gallery/243171087/Pattern-Illustration-Bridgerton-x-Williams-Sonoma' },
+  { text: 'Fernández, V. (2020, 19 de septiembre). Cistanthe grandiflora [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/60063221' },
   { text: 'Fundación Chilena de Endemismos & Royal Botanic Gardens, Kew. (s. f.). Strombocarpa tamarugo (Phil.) C.E. Hughes & G.P. Lewis. Las plantas endémicas de Chile.', url: 'https://chileanendemics.rbge.org.uk/es/taxa/strombocarpa-tamarugo-phil-c-e-hughes-g-p-lewis' },
+  { text: 'idouglas. (2019). Prosopis tamarugo [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/27597344' },
+  { text: 'Instituto de Investigaciones Agropecuarias. (2023). Guayacán: Porlieria chilensis. En C. Pizarro A., E. Ibacache C., & C. Pañitrur D. (Eds.), Propagación de especies nativas de Chile (p. 243). INIA Intihuasi.', url: 'https://biblioteca.inia.cl/server/api/core/bitstreams/252eec3b-f2d8-4990-8749-59b784cfffd1/content' },
   { text: 'Instituto de Salud Pública de Chile. (2023). Lobelia tupa.', url: 'https://www.ispch.cl/wp-content/uploads/2023/03/Lobelia-tupa-21022023A.pdf' },
   { text: 'Ladera Sur. (2024, 28 de mayo). Araucaria: El árbol sagrado que es memoria viva y se resiste a desaparecer.', url: 'https://laderasur.com/articulo/especial-chile-araucaria-el-arbol-sagrado-que-es-memoria-viva-y-se-resiste-a-desaparecer/' },
-  { text: 'Ministerio del Medio Ambiente. (2017). Libro coloreable de flora nativa de Magallanes.', url: 'https://repositorioambiental.mma.gob.cl/wp-content/uploads/2019/10/Libro-Colorear.pdf' },
-  { text: 'Ministerio del Medio Ambiente. (2018). Biodiversidad de Chile: Patrimonio y desafíos (3.ª ed.).', url: 'https://mma.gob.cl/wp-content/uploads/2020/10/Biodiversidad-LIBRO-REUNIDO-FINAL-web.pdf' },
-  { text: 'Ministerio del Medio Ambiente. (s. f.). Manual Proyecto Cayumanque.', url: 'https://mma.gob.cl/wp-content/uploads/2020/10/Manual-Proyecto-Cayumanque.pdf' },
+  { text: 'Ladera Sur. (2025, 24 de octubre). Pata de guanaco, la flor que domina el Desierto Florido por su increíble capacidad de adaptación.', url: 'https://laderasur.com/articulo/pata-de-guanaco-la-flor-que-domina-el-desierto-florido-por-su-increible-capacidad-de-adaptacion/' },
+  { text: 'Lucianativa. (s. f.). [Fotografía de Porlieria chilensis] [Fotografía]. Flickr.', url: 'https://www.flickr.com/photos/lucianativa/44278126084/' },
   { text: 'Meteored. (2024, 21 de marzo). El ciprés de las Guaitecas: Conoce al árbol del sur de Chile que puede vivir hasta 800 años.', url: 'https://www.meteored.cl/noticias/actualidad/el-cipres-de-las-guaitecas-conoce-al-arbol-del-sur-de-chile-que-puede-vivir-hasta-800-anos.html' },
-  { text: 'Ñuble Naturaleza. (s. f.). Palqui.', url: 'https://www.nublenaturaleza.cl/articulos/flora/arbustos/palqui' },
-  { text: 'Panul para Todos. (s. f.). Maitén (Maytenus boaria).', url: 'https://www.panulparatodos.cl/es/biodiversidad/flora/maytenus-boaria' },
-  { text: 'País Circular. (2021, 22 de diciembre). Palma chilena podría extinguirse por acción de roedores exóticos si no se toman medidas urgentes.', url: 'https://www.paiscircular.cl/biodiversidad/palma-chilena-podria-extinguirse-por-accion-de-roedores-exoticos-si-no-se-toman-medidas-urgentes/' },
-  { text: 'Pumahuida. (s. f.). Lobelia tupa.', url: 'https://www.pumahuida.cl/especies/lobelia-tupa/' },
-  { text: 'Roelplant. (s. f.). Reforestación y regeneración de bosques nativos.', url: 'https://roelplant.cl/contenido/reforestacion-nativas-chile.html' },
-  { text: 'TrekkingChile. (s. f.). Flora chilena: Chile altiplano.', url: 'https://www.trekkingchile.com/es/informaciones/flora-chilena/chile-altiplano/' },
+  { text: 'Ministerio del Medio Ambiente. (2017). Libro coloreable de flora nativa de Magallanes.', url: 'https://repositorioambiental.mma.gob.cl/wp-content/uploads/2019/10/Libro-Colorear.pdf' },
+  { text: 'Ministerio del Medio Ambiente. (2018). Azorella compacta [PDF]. Clasificación de Especies.', url: 'https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Azorella_compacta_FINAL.pdf' },
+  { text: 'Ministerio del Medio Ambiente. (2018). Biodiversidad de Chile: Patrimonio y desafíos (3.ª ed.).', url: 'https://mma.gob.cl/wp-content/uploads/2020/10/Biodiversidad-LIBRO-REUNIDO-FINAL-web.pdf' },
+  { text: 'Ministerio del Medio Ambiente. (2026a). Porlieria chilensis I. M. Johnst. Plataforma Políticas de la Biodiversidad (SIMBIO).', url: 'https://simbio.mma.gob.cl/Especies/VistaImpresion/10144' },
+  { text: 'Ministerio del Medio Ambiente. (2026b). Prosopis tamarugo Phil. [Ficha de especie]. Plataforma Políticas de la Biodiversidad (SIMBIO).', url: 'https://simbio.mma.gob.cl/Especies/VistaImpresion/13297' },
+  { text: 'Ministerio del Medio Ambiente. (2026c). Azorella compacta. Plataforma Políticas de la Biodiversidad (SIMBIO).', url: 'https://simbio.mma.gob.cl/Especies/VistaImpresion/9671' },
+  { text: 'Ministerio del Medio Ambiente. (s. f.). Manual Proyecto Cayumanque.', url: 'https://mma.gob.cl/wp-content/uploads/2020/10/Manual-Proyecto-Cayumanque.pdf' },
   { text: 'nautico_sur. (s. f.). Bosque Magallánico [Fotografía]. Instagram.', url: 'https://www.instagram.com/p/DXp8KiejFTy/?img_index=4' },
+  { text: 'Navarrete, B. (2024). Fruto de Prosopis tamarugo [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/200668995' },
+  { text: 'Ñuble Naturaleza. (s. f.). Palqui.', url: 'https://www.nublenaturaleza.cl/articulos/flora/arbustos/palqui' },
+  { text: 'Omerovic, L. I. (2017, 9 de septiembre). Cistanthe grandiflora [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/26616681' },
+  { text: 'País Circular. (2021, 22 de diciembre). Palma chilena podría extinguirse por acción de roedores exóticos si no se toman medidas urgentes.', url: 'https://www.paiscircular.cl/biodiversidad/palma-chilena-podria-extinguirse-por-accion-de-roedores-exoticos-si-no-se-toman-medidas-urgentes/' },
+  { text: 'Panul para Todos. (s. f.). Maitén (Maytenus boaria).', url: 'https://www.panulparatodos.cl/es/biodiversidad/flora/maytenus-boaria' },
+  { text: 'Pumahuida. (s. f.). Lobelia tupa.', url: 'https://www.pumahuida.cl/especies/lobelia-tupa/' },
+  { text: 'Pumahuida. (s. f.). Pata de guanaco: Cistanthe grandiflora. Vivero Pumahuida.', url: 'https://www.pumahuida.cl/especies/pata-de-guanaco/' },
+  { text: 'Renca Nativa. (2025). [Fotografía de Porlieria chilensis] [Fotografía]. Instagram.', url: 'https://www.instagram.com/p/Db1pkIUDnd6/?img_index=1' },
+  { text: 'Roelplant. (s. f.). Reforestación y regeneración de bosques nativos.', url: 'https://roelplant.cl/contenido/reforestacion-nativas-chile.html' },
+  { text: 'Rodríguez, R., Marticorena, C., Alarcón, D., Baeza, C., Cavieres, L., Finot, V. L., Fuentes, N., Kiessling, A., Mihoc, M., Pauchard, A., Ruiz, E., Sanchez, P., & Marticorena, A. (2018). Catálogo de las plantas vasculares de Chile. Gayana Botánica, 75(1), 1–430.', url: 'https://catalogoplantas.udec.cl/?q=node/4577' },
+  { text: 'Santore, J. (s. f.). The incredible llareta: Azorella compacta. Crime Pays But Botany Doesn’t.', url: 'https://www.crimepaysbutbotanydoesnt.com/blog/the-incredible-llareta-azorella-compacta' },
+  { text: 'TrekkingChile. (s. f.). Flora chilena: Chile altiplano.', url: 'https://www.trekkingchile.com/es/informaciones/flora-chilena/chile-altiplano/' },
+  { text: 'Toledo Gálvez, L. N. (2026, 29 de enero). Cistanthe grandiflora [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/340326573' },
+  { text: 'Velloso, M. (2026). Bare Earth. Fivestar Branding.', url: 'https://www.fivestarlogo.com/post/bare-earth-skincare-branding-packaging-design-madalena-velloso' },
+  { text: 'Villaseca Merino, N. (2023, 7 de noviembre). Porlieria chilensis [Fotografía]. iNaturalist.', url: 'https://www.inaturalist.org/observations/190440278' },
   { text: 'Wikipedia. (s. f.). Flora de Bolivia. Wikipedia, la enciclopedia libre.', url: 'https://es.wikipedia.org/wiki/Flora_de_Bolivia' },
   { text: 'YerbATECA. (s. f.). Palqui (Cestrum parqui): Para qué sirve y 8 usos.', url: 'https://yerbateca.org/plantas/cestrum-parqui/' },
+  { text: 'Yurasova. (s. f.). Yareta (Azorella compacta) plant texture growing in Altiplano [Fotografía]. Dreamstime.', url: 'https://www.dreamstime.com/stock-photo-yareta' },
 ],
   },
   /* ─── Acá agregar más proyectos ─── */
@@ -572,9 +644,9 @@ function renderProject(p) {
   const projectDesc = esc(p.description || '').replace(/\n/g, '<br>');
   const isMinimalProject = !!p.showOnlyGalleryAndReferences;
   const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>${img.caption ? `<div class="gallery-thumb-meta">${esc(img.caption)}</div>` : ''}</div>`;
-  const renderImageSection = (title, images) => {
+  const renderImageSection = (title, images, scope) => {
     if (!images?.length) return '';
-    return `<div class="section"><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid">${images.map((img) => galleryThumbHTML(img)).join('')}</div></div>`;
+    return `<div class="section" data-gallery-section${scope ? ` data-gallery-scope="${esc(scope)}"` : ''}><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid">${images.map((img) => galleryThumbHTML(img)).join('')}</div></div>`;
   };
   let html = `<div class="project-page">
     <button class="back-btn" id="back-btn">
@@ -616,19 +688,25 @@ function renderProject(p) {
     </div>`;
   }
 
-  if (p.pdfs?.length && !isMinimalProject) {
-    html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
-  }
-
   if (!isMinimalProject) {
     html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
   }
 
-  if (p.pdfs?.length && !isMinimalProject) {
+  if (p.gallerySections?.length) {
+    p.gallerySections.forEach((section, index) => {
+      if (section?.images?.length) {
+        html += renderImageSection(section.title || `Galería ${index + 1}`, section.images, section.scope || `gallery-${index}`);
+      }
+    });
+  } else {
+    html += renderImageSection('Galería', p.gallery, 'gallery');
+  }
+
+  if (p.pdfs?.length) {
     html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
   }
 
-  if (!isMinimalProject && p.pdfSections?.length) {
+  if (p.pdfSections?.length) {
     p.pdfSections.forEach((section, index) => {
       if (section?.pdfs?.length) {
         html += renderPdfSection(p.id, section.title || `PDF ${index + 1}`, section.pdfs, section.scope || `custom-${index}`);
@@ -664,11 +742,10 @@ function renderProject(p) {
     }).join('')}</div></div>`;
   }
 
-  html += renderImageSection('Galería', p.gallery);
   if (!isMinimalProject) {
-    html += renderImageSection('Referentes', p.referentes);
-    html += renderImageSection('Fotos Aconcagua', p.aconcaguaImages);
-    html += renderImageSection('Fotos finales', p.finalImages);
+    html += renderImageSection('Referentes', p.referentes, 'referentes');
+    html += renderImageSection('Fotos Aconcagua', p.aconcaguaImages, 'aconcagua');
+    html += renderImageSection('Fotos finales', p.finalImages, 'final');
   }
 
   if (!isMinimalProject && p.model3d) {
@@ -782,23 +859,30 @@ function setupStlLauncher(projectId) {
 }
 
 function setupGalleryInteractions() {
-  const thumbs = Array.from(viewRoot.querySelectorAll('.gallery-thumb[data-gallery-src]'));
-  lbImages = thumbs.map((thumb) => ({
-    src: thumb.getAttribute('data-gallery-src') || '',
-    caption: thumb.getAttribute('data-gallery-caption') || '',
-  })).filter((img) => img.src);
+  const sections = Array.from(viewRoot.querySelectorAll('[data-gallery-section]'));
+  if (!sections.length) return;
 
-  thumbs.forEach((thumb, idx) => {
-    const open = () => {
-      if (!lbImages.length) return;
-      openLightbox(idx);
-    };
-    thumb.addEventListener('click', open);
-    thumb.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        open();
-      }
+  sections.forEach((section) => {
+    const thumbs = Array.from(section.querySelectorAll('.gallery-thumb[data-gallery-src]'));
+    const images = thumbs.map((thumb) => ({
+      src: thumb.getAttribute('data-gallery-src') || '',
+      caption: thumb.getAttribute('data-gallery-caption') || '',
+    })).filter((img) => img.src);
+
+    thumbs.forEach((thumb, idx) => {
+      const open = () => {
+        if (!images.length) return;
+        lbImages = images;
+        openLightbox(idx);
+      };
+
+      thumb.addEventListener('click', open);
+      thumb.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          open();
+        }
+      });
     });
   });
 }
@@ -1283,9 +1367,10 @@ function setupReferencesToggle() {
 async function renderPDF(src, cid) {
   const el=document.getElementById(cid); if(!el) return;
 
-  // PDF.js suele fallar cuando el HTML se abre con file://. En ese caso mostramos fallback claro.
   if (isFileProtocol) {
-    el.innerHTML = `<div class="pdf-loading">La previsualización de PDF puede fallar en modo local (<code>file://</code>). Abrí el proyecto con un servidor local para verlo aquí. Mientras tanto podés usar <a href="${esc(src)}" target="_blank" rel="noopener">este enlace directo al PDF</a>.</div>`;
+    el.innerHTML = `<object class="pdf-embed" data="${esc(src)}" type="application/pdf">
+      <div class="pdf-loading">No se pudo abrir el visor incrustado. Podés usar <a href="${esc(src)}" target="_blank" rel="noopener">este enlace directo al PDF</a>.</div>
+    </object>`;
     return;
   }
 
@@ -1306,7 +1391,8 @@ async function renderPDF(src, cid) {
 function openLightbox(i){ lbIdx=i; updateLB(); lightbox.classList.add('open'); document.body.style.overflow='hidden'; }
 function closeLightbox(){ lightbox.classList.remove('open'); document.body.style.overflow=''; }
 function updateLB(){
-  const img=lbImages[lbIdx];
+  const img = lbImages[lbIdx];
+  if (!img) return;
   lbImg.src=img.src; lbImg.alt=img.caption||'';
   lbCaption.textContent=img.caption||'';
   lbCounter.textContent=`${lbIdx+1} / ${lbImages.length}`;
