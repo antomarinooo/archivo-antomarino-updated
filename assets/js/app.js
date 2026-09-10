@@ -279,6 +279,7 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
   },
   {
     id: 'p2',
+    slug: 'examen-tg1',
     number: '01',
     title: 'Examen Taller Gráfico I',
     subject: 'Taller Gráfico I',
@@ -287,7 +288,7 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
     parte: 'Examen',
     tags: ['Examen', 'Taller Gráfico I', 'Aconcagua', 'Naturaleza como fuerza superior'],
     description: 'Fondo general del proyecto con todos los archivos actualizados del examen: galerías de imágenes, visores PDF, visor 3D y videos.',
-    cover: 'assets/proyectos/examen-tg1/imgs/final/cover.JPG',
+    cover: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-5.jpg',
 
     gallery: [
       { src: 'assets/proyectos/examen-tg1/imgs/13_-Latina-Producciones_-LOS-JAIVAS-GRUPO-MUSICAL-_-CONTRATACIONES_-CANTANTES-PARA-EVENTOS_-SHOW-MUSICAL_-SHOW-ON-LINE_-PRESENTACIONES-PRIVADAS_-CONTRATACIONES-CHILE_-scaled.jpg', caption: '13_-Latina-Producciones' },
@@ -399,6 +400,7 @@ stage1: {
   },
   {
     id: 'p3',
+    slug: 'flora-nativa-chilena',
     number: '03',
     title: 'Proyecto Flora Nativa Chilena',
     subject: 'Taller Gráfico II',
@@ -406,46 +408,59 @@ stage1: {
     year: '2026',
     parte: 'Galería y referencias',
     tags: ['flora nativa', 'biodiversidad', 'Chile', 'Sistema gráfico'],
-    description: 'Proyecto de investigación visual sobre la flora nativa chilena. \n\nDocentes:\nAndrea Torres e Ignacia Santillán',
-    cover: 'assets/proyectos/proyecto-flora-nativa-chilena/img/alerce%20milenario.jpg',
+    description: 'Colección de papelería e ilustración botánica proyectada para valorizar el patrimonio natural chileno mediante objetos cotidianos. La propuesta aborda la resiliencia de la fragilidad en la flora nativa desértica, planteando que la adaptabilidad de estas especies convive con una extrema vulnerabilidad cuando su entorno se ve amenazado, por lo que la conservación resulta indispensable.\n\nIntegrantes:\nAntonia Cajigal - Martina Merino - Isabel Zapata',
+    cover: 'assets/proyectos/proyecto-flora-nativa-chilena/img/fotos%20finales/foto_final_8.jpeg',
+    floraLayout: true,
     gallerySections: [
       {
-        title: 'Guayacán',
-        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/guayacan', 'guayacan', 35, 'Guayacán'),
+        title: 'Flora nativa',
+        scope: 'flora-nativa',
+        images: [
+          ...buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/guayacan', 'guayacan', 35, 'Guayacán'),
+          ...buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/pata de guanaco', 'patadeguanaco', 32, 'Pata de guanaco'),
+          ...buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/yareta', 'yareta', 14, 'Yareta'),
+          ...buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/tamarugo', 'tamarugo', 15, 'Tamarugo'),
+        ],
       },
       {
-        title: 'Pata de guanaco',
-        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/pata de guanaco', 'patadeguanaco', 32, 'Pata de guanaco'),
+        title: 'Bocetos proceso',
+        scope: 'bocetos-proceso',
+        images: [
+          'Scan 1 Large.jpeg', 'Scan 2 Large.jpeg', 'Scan 3 (1) Large.jpeg', 'Scan 4 Large.jpeg', 'Scan 5 Large.jpeg',
+          'Scan 6 Large.jpeg', 'bocetos grafito 2 Large.jpeg', 'bocetos grafito 3 Large.jpeg', 'bocetos grafito Large.jpeg',
+          'hoja acuarela 2 Large.jpeg', 'hoja acuarela Large.jpeg',
+        ].map((name) => ({ src: encodeURI(`assets/proyectos/proyecto-flora-nativa-chilena/img/bocetos proceso/${name}`), caption: name })),
       },
       {
-        title: 'Yareta',
-        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/yareta', 'yareta', 14, 'Yareta'),
+        title: 'Ilustraciones',
+        scope: 'ilustraciones',
+        images: Array.from({ length: 13 }, (_, index) => ({
+          src: `assets/proyectos/proyecto-flora-nativa-chilena/img/ilustraciones/ilustraciones_${index + 1}.jpeg`,
+          caption: `ilustraciones_${index + 1}`,
+        })),
       },
+    ],
+    videos: [
       {
-        title: 'Tamarugo',
-        images: buildSequentialGallery('assets/proyectos/proyecto-flora-nativa-chilena/img/fotos flora/tamarugo', 'tamarugo', 15, 'Tamarugo'),
+        title: 'Animación flora nativa desértica',
+        src: encodeURI('assets/proyectos/proyecto-flora-nativa-chilena/animacio\u0301n_flora_nativa_dese\u0301rtica.mp4'),
+        type: 'video/mp4',
       },
     ],
     pdfSections: [
       {
-        title: 'Lámina investigativa',
-        scope: 'lamina-investigacion',
+        title: 'Lámina investigativa y lámina final',
+        scope: 'laminas-principales',
         pdfs: [
           {
             src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/lamina-investigacion.pdf',
             label: 'Lámina investigativa',
             description: 'PDF con el visor integrado de la lámina de investigación',
           },
-        ],
-      },
-      {
-        title: 'Sistema gráfico',
-        scope: 'sistema-grafico',
-        pdfs: [
           {
-            src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/sistema-grafico.pdf',
-            label: 'Sistema gráfico',
-            description: 'PDF con el visor integrado del sistema gráfico',
+            src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/lamina-final.pdf',
+            label: 'Lámina final',
+            description: 'Visor preparado para cuando agregues el archivo.',
           },
         ],
       },
@@ -458,6 +473,21 @@ stage1: {
             label: 'Ficha técnica',
             description: 'PDF con el visor integrado de la ficha técnica',
           },
+        ],
+      },
+      {
+        title: 'Manual de marca',
+        scope: 'manual-de-marca',
+        pdfs: [
+          { src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/manual-de-marca.pdf', label: 'Manual de marca', description: 'Visor preparado para cuando agregues el archivo.' },
+        ],
+      },
+      {
+        title: 'Afiches',
+        scope: 'afiches',
+        pdfs: [
+          { src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/afiches-chicos.pdf', label: 'Afiches chicos' },
+          { src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/afiche-final.pdf', label: 'Afiche grande' },
         ],
       },
     ],
@@ -582,7 +612,19 @@ function buildNav() {
   });
 }
 
-function navigate(id) { currentView=id; buildNav(); renderView(); window.scrollTo({top:0}); }
+function routeForProject(project) { return project?.slug || project?.id || 'home'; }
+function projectForRoute(route) { return PROJECTS.find((project) => route === project.slug || route === project.id); }
+
+function navigate(id, replace = false) {
+  currentView = id;
+  const project = PROJECTS.find((item) => item.id === id);
+  const route = project ? routeForProject(project) : 'home';
+  const url = `${window.location.pathname}${window.location.search}${route === 'home' ? '' : `#${route}`}`;
+  window.history[replace ? 'replaceState' : 'pushState']({}, '', url);
+  buildNav();
+  renderView();
+  window.scrollTo({ top: 0 });
+}
 
 function updateScrollFab() {
   if (!scrollFab || !scrollFabIcon) return;
@@ -643,10 +685,12 @@ function renderHome() {
 function renderProject(p) {
   const projectDesc = esc(p.description || '').replace(/\n/g, '<br>');
   const isMinimalProject = !!p.showOnlyGalleryAndReferences;
-  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>${img.caption ? `<div class="gallery-thumb-meta">${esc(img.caption)}</div>` : ''}</div>`;
+  const isFloraProject = !!p.floraLayout;
+  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="" tabindex="0" role="button"><img src="${esc(img.src)}" alt="" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
   const renderImageSection = (title, images, scope) => {
     if (!images?.length) return '';
-    return `<div class="section" data-gallery-section${scope ? ` data-gallery-scope="${esc(scope)}"` : ''}><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid">${images.map((img) => galleryThumbHTML(img)).join('')}</div></div>`;
+    const hasMore = images.length > 10;
+    return `<div class="section" data-gallery-section${scope ? ` data-gallery-scope="${esc(scope)}"` : ''}><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid${hasMore ? ' gallery-grid-limited' : ''}">${images.map((img) => galleryThumbHTML(img)).join('')}</div>${hasMore ? '<button class="btn btn-outline gallery-load-more" type="button">Cargar más imágenes</button>' : ''}</div>`;
   };
   let html = `<div class="project-page">
     <button class="back-btn" id="back-btn">
@@ -692,7 +736,30 @@ function renderProject(p) {
     html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
   }
 
-  if (p.gallerySections?.length) {
+  const videoGallery = [
+    ...(p.videos || []).map((video) => ({ ...video, vertical: false })),
+    ...(p.verticalVideos || []).map((video) => ({ ...video, vertical: true })),
+  ];
+
+  if (isFloraProject) {
+    const galleryByScope = (scope) => p.gallerySections?.find((section) => section.scope === scope);
+    const pdfByScope = (scope) => p.pdfSections?.find((section) => section.scope === scope);
+    const renderPdfScope = (scope) => {
+      const section = pdfByScope(scope);
+      return section?.pdfs?.length ? renderPdfSection(p.id, section.title, section.pdfs, section.scope) : '';
+    };
+
+    html += renderImageSection('Flora nativa', galleryByScope('flora-nativa')?.images, 'flora-nativa');
+    html += renderPdfScope('laminas-principales');
+    html += renderPdfScope('ficha-tecnica');
+    html += renderPdfScope('manual-de-marca');
+    html += renderImageSection('Bocetos proceso', galleryByScope('bocetos-proceso')?.images, 'bocetos-proceso');
+    html += renderImageSection('Ilustraciones', galleryByScope('ilustraciones')?.images, 'ilustraciones');
+    html += renderPdfScope('afiches');
+    if (videoGallery.length) {
+      html += `<div class="section"><div class="section-label">Animación</div><div class="video-grid">${videoGallery.map((video) => `<article class="video-card"><div class="video-frame"><video controls playsinline preload="metadata" data-video-thumb data-video-src="${esc(video.src)}"><source src="${esc(video.src)}" type="${esc(video.type || 'video/mp4')}"></video></div><div class="media-caption"><span>${esc(video.title || 'Animación')}</span></div></article>`).join('')}</div></div>`;
+    }
+  } else if (p.gallerySections?.length) {
     p.gallerySections.forEach((section, index) => {
       if (section?.images?.length) {
         html += renderImageSection(section.title || `Galería ${index + 1}`, section.images, section.scope || `gallery-${index}`);
@@ -702,11 +769,11 @@ function renderProject(p) {
     html += renderImageSection('Galería', p.gallery, 'gallery');
   }
 
-  if (p.pdfs?.length) {
+  if (!isFloraProject && p.pdfs?.length) {
     html += renderPdfSection(p.id, 'Láminas PDF', p.pdfs, 'primary');
   }
 
-  if (p.pdfSections?.length) {
+  if (!isFloraProject && p.pdfSections?.length) {
     p.pdfSections.forEach((section, index) => {
       if (section?.pdfs?.length) {
         html += renderPdfSection(p.id, section.title || `PDF ${index + 1}`, section.pdfs, section.scope || `custom-${index}`);
@@ -724,16 +791,11 @@ function renderProject(p) {
     html += `<div class="section"><div class="section-label">${esc(p.svgViewer.title || 'Visualizador SVG')}</div><figure class="svg-viewer"><img src="${esc(p.svgViewer.src)}" alt="${esc(p.svgViewer.caption || p.svgViewer.title || 'SVG')}" loading="lazy" decoding="async"/></figure></div>`;
   }
 
-  const videoGallery = [
-    ...(p.videos || []).map((video) => ({ ...video, vertical: false })),
-    ...(p.verticalVideos || []).map((video) => ({ ...video, vertical: true })),
-  ];
-
-  if (!isMinimalProject && p.mainVideo?.src) {
+  if (!isFloraProject && p.mainVideo?.src) {
     html += `<div class="section"><div class="section-label">Video principal</div><article class="video-main"><div class="video-frame"><video controls playsinline preload="metadata" data-video-thumb data-video-src="${esc(p.mainVideo.src)}"><source src="${esc(p.mainVideo.src)}" type="${esc(p.mainVideo.type || 'video/mp4')}"></video></div><div class="media-caption"><span>${esc(p.mainVideo.title || 'Video principal')}</span></div></article></div>`;
   }
 
-  if (!isMinimalProject && videoGallery.length) {
+  if (!isFloraProject && videoGallery.length) {
     html += `<div class="section"><div class="section-label">Galería de video</div><div class="video-grid">${videoGallery.map((video, idx) => {
       const hasSrc = !!video.src;
       const videoClass = video.vertical ? ' video-card-vertical' : '';
@@ -863,6 +925,14 @@ function setupGalleryInteractions() {
   if (!sections.length) return;
 
   sections.forEach((section) => {
+    const grid = section.querySelector('.gallery-grid-limited');
+    const loadMore = section.querySelector('.gallery-load-more');
+    if (grid && loadMore) {
+      loadMore.addEventListener('click', () => {
+        grid.classList.remove('gallery-grid-limited');
+        loadMore.remove();
+      });
+    }
     const thumbs = Array.from(section.querySelectorAll('.gallery-thumb[data-gallery-src]'));
     const images = thumbs.map((thumb) => ({
       src: thumb.getAttribute('data-gallery-src') || '',
@@ -1393,7 +1463,15 @@ function closeLightbox(){ lightbox.classList.remove('open'); document.body.style
 function updateLB(){
   const img = lbImages[lbIdx];
   if (!img) return;
-  lbImg.src=img.src; lbImg.alt=img.caption||'';
+  lbImg.classList.add('is-loading');
+  lbImg.alt=img.caption||'Imagen de galería';
+  lbImg.onload = () => lbImg.classList.remove('is-loading');
+  lbImg.onerror = () => {
+    lbImg.classList.remove('is-loading');
+    lbCaption.textContent = 'No se pudo cargar esta imagen';
+  };
+  lbImg.src='';
+  lbImg.src=img.src;
   lbCaption.textContent=img.caption||'';
   lbCounter.textContent=`${lbIdx+1} / ${lbImages.length}`;
 }
@@ -1457,6 +1535,16 @@ function footerHTML(){
 }
 
 function esc(s){ if(!s) return ''; return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+const initialProject = projectForRoute(window.location.hash.slice(1));
+currentView = initialProject?.id || 'home';
+window.addEventListener('popstate', () => {
+  const project = projectForRoute(window.location.hash.slice(1));
+  currentView = project?.id || 'home';
+  buildNav();
+  renderView();
+  window.scrollTo({ top: 0 });
+});
 
 buildNav();
 renderView();

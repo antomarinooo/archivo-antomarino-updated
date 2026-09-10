@@ -875,6 +875,14 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.gallery-grid-limited .gallery-thumb:nth-child(n + 11) {
+  display: none;
+}
+
+.gallery-load-more {
+  margin-top: 14px;
+}
+
 /* ========== 10) Lightbox ========== */
 /* Nota: visor fullscreen para las imagenes de la galeria. */
 .lightbox {
@@ -899,6 +907,12 @@ body {
   max-height: 78vh;
   object-fit: contain;
   border-radius: 4px;
+  display: block;
+  transition: opacity 0.15s ease;
+}
+
+.lb-img.is-loading {
+  opacity: 0;
 }
 
 .lb-close {
