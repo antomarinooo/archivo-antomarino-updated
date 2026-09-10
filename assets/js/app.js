@@ -408,7 +408,7 @@ stage1: {
     year: '2026',
     parte: 'Galería y referencias',
     tags: ['flora nativa', 'biodiversidad', 'Chile', 'Sistema gráfico'],
-    description: 'Colección de papelería e ilustración botánica proyectada para valorizar el patrimonio natural chileno mediante objetos cotidianos. La propuesta aborda la resiliencia de la fragilidad en la flora nativa desértica, planteando que la adaptabilidad de estas especies convive con una extrema vulnerabilidad cuando su entorno se ve amenazado, por lo que la conservación resulta indispensable.\n\nIntegrantes:\nAntonia Cajigal - Martina Merino - Isabel Zapata',
+    description: 'Colección de papelería e ilustración botánica proyectada para valorizar el patrimonio natural chileno. La propuesta aborda la resiliencia de la fragilidad en la flora nativa desértica, planteando que la adaptabilidad de estas especies convive con una extrema vulnerabilidad cuando su entorno se ve amenazado, por lo que la conservación resulta indispensable.\n\nIntegrantes:\nAntonia Cajigal - Martina Merino - Isabel Zapata',
     cover: 'assets/proyectos/proyecto-flora-nativa-chilena/img/fotos%20finales/foto_final_8.jpeg',
     floraLayout: true,
     gallerySections: [
@@ -455,12 +455,12 @@ stage1: {
           {
             src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/lamina-investigacion.pdf',
             label: 'Lámina investigativa',
-            description: 'PDF con el visor integrado de la lámina de investigación',
+
           },
           {
             src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/lamina-final.pdf',
             label: 'Lámina final',
-            description: 'Visor preparado para cuando agregues el archivo.',
+
           },
         ],
       },
@@ -471,7 +471,7 @@ stage1: {
           {
             src: 'assets/proyectos/proyecto-flora-nativa-chilena/pdfs/ficha-tecnica.pdf',
             label: 'Ficha técnica',
-            description: 'PDF con el visor integrado de la ficha técnica',
+
           },
         ],
       },
@@ -880,7 +880,7 @@ function renderProject(p) {
   }
 
   if (p.references?.length) {
-    html += `<div class="section"><div class="section-label">Bibliografía APA 7</div><div class="ref-list">${p.references.map((ref, idx) => `<div class="ref-item"><span class="ref-index">${idx + 1}.</span> <span class="ref-text">${esc(ref.text)}</span> <a href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.url)}</a></div>`).join('')}</div></div>`;
+    html += `<div class="section"><div class="section-label">Referencias bibliográficas</div><div class="ref-list">${p.references.map((ref, idx) => `<div class="ref-item"><span class="ref-index">${idx + 1}.</span> <span class="ref-text">${esc(ref.text)}</span> <a href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.url)}</a></div>`).join('')}</div></div>`;
   }
 
   viewRoot.innerHTML = html + footerHTML();
