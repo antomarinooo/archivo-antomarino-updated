@@ -538,6 +538,71 @@ stage1: {
   { text: 'Yurasova. (s. f.). Yareta (Azorella compacta) plant texture growing in Altiplano [Fotografía]. Dreamstime.', url: 'https://www.dreamstime.com/stock-photo-yareta' },
 ],
   },
+  {
+    id: 'p4',
+    slug: 'proyecto-editorial-tgii',
+    number: '04',
+    title: 'Proyecto editorial unidad II',
+    subject: 'Taller Gráfico II',
+    icon: '📖',
+    year: '2026',
+    tags: ['editorial', 'fotografía', 'peces', 'Taller Gráfico II'],
+    description: 'Pieza editorial desarrollada para la unidad II de Taller Gráfico II.',
+    cover: 'assets/proyectos/proyecto-editorial-tgii/img/lance-anderson-G2SDLsJp3rg-unsplash.webp',
+    gallery: [
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/ahtziri-lagarde-vWjm-jwJXN0-unsplash.webp', caption: 'Fig. 1' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/slnc-baoFb7tALIw-unsplash.webp', caption: 'Fig. 2' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/juanma-clemente-alloza-tHbSmexz5Mk-unsplash.webp', caption: 'Fig. 3' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/lance-anderson-G2SDLsJp3rg-unsplash.webp', caption: 'Fig. 4' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/cooper-white-sCLjBcXeEB0-unsplash.webp', caption: 'Fig. 5' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/mtsjrdl-iswOz5fo-Vw-unsplash.webp', caption: 'Fig. 6' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/siva-t-jTyBPNtGcR0-unsplash.webp', caption: 'Fig. 7' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sergey-semin-DuhRJm_KBTA-unsplash.webp', caption: 'Fig. 8' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tarikul-raana-mSF6ikPWFrA-unsplash.webp', caption: 'Fig. 9' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/bernd-dittrich-XAcNBd3s7MY-unsplash.webp', caption: 'Fig. 10' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/maximilian-brand-qqd_cjBc1ws-unsplash.webp', caption: 'Fig. 11' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/max-griss-zl_j1Azc77I-unsplash.webp', caption: 'Fig. 12' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/marcos-paulo-prado-OkethWwIIEU-unsplash.webp', caption: 'Fig. 13' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tien-vu-ngoc-0U8uFS_g5Yo-unsplash.webp', caption: 'Fig. 14' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/karyna-panchenko-2BDrlJL7uA0-unsplash.webp', caption: 'Fig. 15' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/david-dvoracek-tQk3y00flv4-unsplash.webp', caption: 'Fig. 16' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/annie-spratt-fNAF-MypQqI-unsplash.webp', caption: 'Imagen complementaria' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/jet-kim-_w-VVA8PrC0-unsplash.webp', caption: 'Imagen complementaria' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/kenneth-cossin-dpkpkJn7nfY-unsplash.webp', caption: 'Imagen complementaria' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.webp', caption: 'Imagen complementaria' },
+    ],
+    pdfs: [
+      {
+        src: 'assets/proyectos/proyecto-editorial-tgii/pdf/editorial-tgii.pdf',
+        label: 'Pieza editorial · Unidad II',
+        description: 'PDF · Taller Gráfico II',
+      },
+    ],
+    emptyGallerySections: [
+      { title: 'Fotos finales', scope: 'fotos-finales' },
+    ],
+    references: [
+  { text: 'Fig. 1. Takeda, A. (2019). Yellow and green road sign near rocky wall [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/yellow-and-green-road-sign-near-rocky-wall--461rTEnnso' },
+  { text: 'Fig. 2. SLNC. (2026). A large school of small silver fish swimming underwater [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-large-school-of-small-silver-fish-swimming-underwater-baoFb7tALIw' },
+  { text: 'Fig. 3. Clemente-Alloza, J. (2018). School of gray fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/school-of-gray-fish-tHbSmexz5Mk' },
+  { text: 'Fig. 4. Anderson, L. (2017). School of gray fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/school-of-gray-fish-G2SDLsJp3rg' },
+  { text: 'Fig. 5. White, C. (2025). A bright orange goldfish swims in dark water [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-bright-orange-goldfish-swims-in-dark-water-sCLjBcXeEB0' },
+  { text: 'Fig. 6. mtsjrdl. (2024). A man standing in front of a display of fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-man-standing-in-front-of-a-display-of-fish-iswOz5fo-Vw' },
+  { text: 'Fig. 7. T, S. (2020). Gray fish on black surface [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/gray-fish-on-black-surface-jTyBPNtGcR0' },
+  { text: 'Fig. 8. Semin, S. (2020). Black and brown snake on brown sand [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/black-and-brown-snake-on-brown-sand-DuhRJm_KBTA' },
+  { text: 'Fig. 9. Raana, T. (2022). A group of fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-group-of-fish-mSF6ikPWFrA' },
+  { text: 'Fig. 10. Dittrich, B. (2022). A white feather on the ground [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-white-feather-on-the-ground-XAcNBd3s7MY' },
+  { text: 'Fig. 11. Brand, M. (2025). A dead bird on a gravel ground [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-dead-bird-on-a-gravel-ground-qqd_cjBc1ws' },
+  { text: 'Fig. 12. Griss, M. (2021). Strawberry fruit on white ceramic plate [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/strawberry-fruit-on-white-ceramic-plate-zl_j1Azc77I' },
+  { text: 'Fig. 13. Prado, M. P. (2020). School of fish in water [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/school-of-fish-in-water-OkethWwIIEU' },
+  { text: 'Fig. 14. Raana, T. (2022). A pile of fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-pile-of-fish-FhCwSs77ivI' },
+  { text: 'Fig. 15. Panchenko, K. (2022). A piece of raw salmon sitting on top of a cutting board [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/a-piece-of-raw-salmon-sitting-on-top-of-a-cutting-board-2BDrlJL7uA0' },
+  { text: 'Fig. 16. Dvořáček, D. (2019). White and orange koi fish [Fotografía]. Unsplash.', url: 'https://unsplash.com/photos/white-and-orange-koi-fish-tQk3y00flv4' },
+
+  { text: 'Nardone, G. (2016). La terapia degli attacchi di panico: Un trattamento efficace e rapido. Ponte alle Grazie.' },
+  { text: 'Han, B.-C. (2012). La sociedad del cansancio. Herder.' },
+],
+  },
   /* ─── Acá agregar más proyectos ─── */
 ];
 // Filtra el proyecto para que permanezca en los datos locales pero no se renderice en la web
@@ -686,6 +751,7 @@ function renderProject(p) {
     const hasMore = images.length > 10;
     return `<div class="section" data-gallery-section${scope ? ` data-gallery-scope="${esc(scope)}"` : ''}><div class="section-label">${esc(title)} - ${images.length} archivos</div><div class="gallery-grid${hasMore ? ' gallery-grid-limited' : ''}">${images.map((img) => galleryThumbHTML(img)).join('')}</div>${hasMore ? '<button class="btn btn-outline gallery-load-more" type="button">Cargar más imágenes</button>' : ''}</div>`;
   };
+  const renderEmptyGallerySection = (title, scope) => `<div class="section gallery-empty-section" data-gallery-section${scope ? ` data-gallery-scope="${esc(scope)}"` : ''}><div class="section-label">${esc(title)} - 0 archivos</div><div class="gallery-empty">Aún no hay fotos cargadas en esta galería.</div></div>`;
   let html = `<div class="project-page">
     <button class="back-btn" id="back-btn">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
@@ -761,6 +827,11 @@ function renderProject(p) {
     });
   } else {
     html += renderImageSection('Galería', p.gallery, 'gallery');
+  }
+  if (p.emptyGallerySections?.length) {
+    p.emptyGallerySections.forEach((section) => {
+      html += renderEmptyGallerySection(section.title, section.scope);
+    });
   }
 
   if (!isFloraProject && p.pdfs?.length) {
