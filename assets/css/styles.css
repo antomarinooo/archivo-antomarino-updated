@@ -84,7 +84,6 @@ body {
   font-size: 14px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  animation: site-enter 0.45s ease both;
 }
 
 ::-webkit-scrollbar {
@@ -109,15 +108,8 @@ body {
 }
 
 @keyframes site-enter {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes card-enter {

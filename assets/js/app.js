@@ -546,30 +546,30 @@ stage1: {
     subject: 'Taller Gráfico II',
     icon: '📖',
     year: '2026',
-    tags: ['editorial', 'fotografía', 'peces', 'Taller Gráfico II'],
+    tags: ['editorial', 'Taller Gráfico II'],
     description: 'Pieza editorial desarrollada para la unidad II de Taller Gráfico II.',
     cover: 'assets/proyectos/proyecto-editorial-tgii/img/lance-anderson-G2SDLsJp3rg-unsplash.webp',
     gallery: [
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/ahtziri-lagarde-vWjm-jwJXN0-unsplash.webp', caption: 'Fig. 1' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/slnc-baoFb7tALIw-unsplash.webp', caption: 'Fig. 2' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/juanma-clemente-alloza-tHbSmexz5Mk-unsplash.webp', caption: 'Fig. 3' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/lance-anderson-G2SDLsJp3rg-unsplash.webp', caption: 'Fig. 4' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/cooper-white-sCLjBcXeEB0-unsplash.webp', caption: 'Fig. 5' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/mtsjrdl-iswOz5fo-Vw-unsplash.webp', caption: 'Fig. 6' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/siva-t-jTyBPNtGcR0-unsplash.webp', caption: 'Fig. 7' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sergey-semin-DuhRJm_KBTA-unsplash.webp', caption: 'Fig. 8' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tarikul-raana-mSF6ikPWFrA-unsplash.webp', caption: 'Fig. 9' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/bernd-dittrich-XAcNBd3s7MY-unsplash.webp', caption: 'Fig. 10' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/maximilian-brand-qqd_cjBc1ws-unsplash.webp', caption: 'Fig. 11' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/max-griss-zl_j1Azc77I-unsplash.webp', caption: 'Fig. 12' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/marcos-paulo-prado-OkethWwIIEU-unsplash.webp', caption: 'Fig. 13' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tien-vu-ngoc-0U8uFS_g5Yo-unsplash.webp', caption: 'Fig. 14' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/karyna-panchenko-2BDrlJL7uA0-unsplash.webp', caption: 'Fig. 15' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/david-dvoracek-tQk3y00flv4-unsplash.webp', caption: 'Fig. 16' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/annie-spratt-fNAF-MypQqI-unsplash.webp', caption: 'Imagen complementaria' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/jet-kim-_w-VVA8PrC0-unsplash.webp', caption: 'Imagen complementaria' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/kenneth-cossin-dpkpkJn7nfY-unsplash.webp', caption: 'Imagen complementaria' },
-      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.webp', caption: 'Imagen complementaria' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/ahtziri-lagarde-vWjm-jwJXN0-unsplash.webp', caption: 'Ahtziri Lagarde — fotografía de paisaje; fecha no consignada en las referencias bibliográficas.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/slnc-baoFb7tALIw-unsplash.webp', caption: 'SLNC (2026) — “A large school of small silver fish swimming underwater”. Fig. 2.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/juanma-clemente-alloza-tHbSmexz5Mk-unsplash.webp', caption: 'Juanma Clemente-Alloza (2018) — “School of gray fish”. Fig. 3.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/lance-anderson-G2SDLsJp3rg-unsplash.webp', caption: 'Lance Anderson (2017) — “School of gray fish”. Fig. 4.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/cooper-white-sCLjBcXeEB0-unsplash.webp', caption: 'Cooper White (2025) — “A bright orange goldfish swims in dark water”. Fig. 5.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/mtsjrdl-iswOz5fo-Vw-unsplash.webp', caption: 'mtsjrdl (2024) — “A man standing in front of a display of fish”. Fig. 6.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/siva-t-jTyBPNtGcR0-unsplash.webp', caption: 'Siva T. (2020) — “Gray fish on black surface”. Fig. 7.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sergey-semin-DuhRJm_KBTA-unsplash.webp', caption: 'Sergey Semin (2020) — “Black and brown snake on brown sand”. Fig. 8.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tarikul-raana-mSF6ikPWFrA-unsplash.webp', caption: 'Tarikul Raana (2022) — “A group of fish”. Fig. 9.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/bernd-dittrich-XAcNBd3s7MY-unsplash.webp', caption: 'Bernd Dittrich (2022) — “A white feather on the ground”. Fig. 10.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/maximilian-brand-qqd_cjBc1ws-unsplash.webp', caption: 'Maximilian Brand (2025) — “A dead bird on a gravel ground”. Fig. 11.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/max-griss-zl_j1Azc77I-unsplash.webp', caption: 'Max Griss (2021) — “Strawberry fruit on white ceramic plate”. Fig. 12.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/marcos-paulo-prado-OkethWwIIEU-unsplash.webp', caption: 'Marcos Paulo Prado (2020) — “School of fish in water”. Fig. 13.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/tien-vu-ngoc-0U8uFS_g5Yo-unsplash.webp', caption: 'Tien Vu Ngoc — fotografía de peces; fecha no consignada en las referencias bibliográficas.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/karyna-panchenko-2BDrlJL7uA0-unsplash.webp', caption: 'Karyna Panchenko (2022) — “A piece of raw salmon sitting on top of a cutting board”. Fig. 15.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/david-dvoracek-tQk3y00flv4-unsplash.webp', caption: 'David Dvořáček (2019) — “White and orange koi fish”. Fig. 16.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/annie-spratt-fNAF-MypQqI-unsplash.webp', caption: 'Annie Spratt — imagen complementaria; fecha no consignada en las referencias bibliográficas.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/jet-kim-_w-VVA8PrC0-unsplash.webp', caption: 'Jet Kim — imagen complementaria; fecha no consignada en las referencias bibliográficas.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/kenneth-cossin-dpkpkJn7nfY-unsplash.webp', caption: 'Kenneth Cossin — imagen complementaria; fecha no consignada en las referencias bibliográficas.' },
+      { src: 'assets/proyectos/proyecto-editorial-tgii/img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.webp', caption: 'Sebastian Peña Lambarri — imagen complementaria; fecha no consignada en las referencias bibliográficas.' },
     ],
     pdfs: [
       {
@@ -745,7 +745,7 @@ function renderProject(p) {
   const projectDesc = esc(p.description || '').replace(/\n/g, '<br>');
   const isMinimalProject = !!p.showOnlyGalleryAndReferences;
   const isFloraProject = !!p.floraLayout;
-  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="" tabindex="0" role="button"><img src="${esc(img.src)}" alt="" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
+  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
   const renderImageSection = (title, images, scope) => {
     if (!images?.length) return '';
     const hasMore = images.length > 10;
@@ -790,10 +790,6 @@ function renderProject(p) {
         </tr>
       </table>
     </div>`;
-  }
-
-  if (!isMinimalProject) {
-    html += `<div class="section"><div class="section-label">${esc(p.stage1?.title || 'Etapa 1: Investigación')}</div>${p.stage1?.description ? `<div class="prose"><p>${esc(p.stage1.description)}</p></div>` : ''}</div>`;
   }
 
   const videoGallery = [
