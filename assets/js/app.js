@@ -287,46 +287,46 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
     year: '2026',
     parte: 'Examen',
     tags: ['Examen', 'Taller Gráfico I', 'Aconcagua', 'Naturaleza como fuerza superior'],
-    description: 'Fondo general del proyecto con todos los archivos actualizados del examen: galerías de imágenes, visores PDF, visor 3D y videos.',
-    cover: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-5.jpg',
+    description: 'Proyecto conceptual inspirado en Los Jaivas, materializado en un contenedor FluxKit que explora la naturaleza como fuerza superior mediante una representación 3D del monte Aconcagua y una pieza editorial de poesía de Gabriela Mistral y Stéphane Mallarmé, encuadernada con técnica japonesa.',
+    cover: 'assets/proyectos/examen-tg1/imgs/final/cover.jpg',
 
     gallery: [
-      { src: 'assets/proyectos/examen-tg1/imgs/13_-Latina-Producciones_-LOS-JAIVAS-GRUPO-MUSICAL-_-CONTRATACIONES_-CANTANTES-PARA-EVENTOS_-SHOW-MUSICAL_-SHOW-ON-LINE_-PRESENTACIONES-PRIVADAS_-CONTRATACIONES-CHILE_-scaled.jpg', caption: '13_-Latina-Producciones' },
-      { src: 'assets/proyectos/examen-tg1/imgs/15648606-07060507666f1dfeecfc0666f1dfeecfc11718558206666f1dfeecfc4.webp', caption: '15648606-07060507666f1dfeecfc0666f1dfeecfc11718558206666f1dfeecfc4' },
-      { src: 'assets/proyectos/examen-tg1/imgs/5044243.jpg', caption: '5044243' },
-      { src: 'assets/proyectos/examen-tg1/imgs/8552049.jpg', caption: '8552049' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los-Jaivas-La-Ventana.jpeg', caption: 'Los-Jaivas-La-Ventana' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los-Jaivas-musica-chilena.jpg', caption: 'Los-Jaivas-musica-chilena' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_1972.jpg', caption: 'Los_Jaivas_1972' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_2017_(cropped).jpg', caption: 'Los_Jaivas_2017_(cropped)' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_en_Machu_Picchu.jpg', caption: 'Los_Jaivas_en_Machu_Picchu' },
-      { src: 'assets/proyectos/examen-tg1/imgs/Los_jaivas.jpg', caption: 'Los_jaivas' },
-      { src: 'assets/proyectos/examen-tg1/imgs/images.jpeg', caption: 'images' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los-jaivas-el-volantin.jpg', caption: 'los-jaivas-el-volantin' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_aconcagua.jpg', caption: 'los_jaivas_aconcagua' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_alturas_machu_picchu.jpg', caption: 'los_jaivas_alturas_machu_picchu' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_musica_chilena.jpg', caption: 'los_jaivas_musica_chilena' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_1.jpg', caption: 'los_jaivas_zona_1' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_2.jpg', caption: 'los_jaivas_zona_2' },
-      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_3.jpg', caption: 'los_jaivas_zona_3' },
+      { src: 'assets/proyectos/examen-tg1/imgs/13_-Latina-Producciones_-LOS-JAIVAS-GRUPO-MUSICAL-_-CONTRATACIONES_-CANTANTES-PARA-EVENTOS_-SHOW-MUSICAL_-SHOW-ON-LINE_-PRESENTACIONES-PRIVADAS_-CONTRATACIONES-CHILE_-scaled.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/15648606-07060507666f1dfeecfc0666f1dfeecfc11718558206666f1dfeecfc4.webp' },
+      { src: 'assets/proyectos/examen-tg1/imgs/5044243.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/8552049.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los-Jaivas-La-Ventana.jpeg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los-Jaivas-musica-chilena.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_1972.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_2017_(cropped).jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los_Jaivas_en_Machu_Picchu.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/Los_jaivas.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/images.jpeg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los-jaivas-el-volantin.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_aconcagua.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_alturas_machu_picchu.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_musica_chilena.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_1.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_2.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/los_jaivas_zona_3.jpg' },
     ],
 
     referentes: [
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-1.jpg', caption: 'referente-1' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-2.jpeg', caption: 'referente-2' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-3.jpeg', caption: 'referente-3' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-4.jpeg', caption: 'referente-4' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-5.jpg', caption: 'referente-5' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-6.jpg', caption: 'referente-6' },
-      { src: 'assets/proyectos/examen-tg1/referentes/referente-7.jpg', caption: 'referente-7' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-1.jpg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-2.jpeg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-3.jpeg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-4.jpeg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-5.jpg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-6.jpg' },
+      { src: 'assets/proyectos/examen-tg1/referentes/referente-7.jpg' },
     ],
 
     aconcaguaImages: [
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-1.jpg', caption: 'aconcagua-1' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-2.jpg', caption: 'aconcagua-2' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-3.jpg', caption: 'aconcagua-3' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-4.jpg', caption: 'aconcagua-4' },
-      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-5.jpg', caption: 'aconcagua-5' },
+      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-1.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-2.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-3.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-4.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/aconcagua/aconcagua-5.jpg' },
     ],
 
     mainVideo: {
@@ -340,13 +340,13 @@ Se estructuraron **dos láminas doble carta en formato vertical** para ordenar j
     ],
 
     finalImages: [
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-1.JPG', caption: 'imgfinal-1' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-2.JPG', caption: 'imgfinal-2' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-3.JPG', caption: 'imgfinal-3' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-4.jpg', caption: 'imgfinal-4' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-5.jpg', caption: 'imgfinal-5' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-6.jpg', caption: 'imgfinal-6' },
-      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-7.jpg', caption: 'imgfinal-7' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-1.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-2.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-3.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-4.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-5.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-6.jpg' },
+      { src: 'assets/proyectos/examen-tg1/imgs/final/imgfinal-7.jpg' },
     ],
 
     pdfSections: [
@@ -401,7 +401,7 @@ stage1: {
   {
     id: 'p3',
     slug: 'flora-nativa-chilena',
-    number: '03',
+    number: '02',
     title: 'Proyecto Flora Nativa Chilena',
     subject: 'Taller Gráfico II',
     icon: '🌿',
@@ -541,7 +541,7 @@ stage1: {
   {
     id: 'p4',
     slug: 'proyecto-editorial-tgii',
-    number: '04',
+    number: '03',
     title: 'Proyecto editorial unidad II',
     subject: 'Taller Gráfico II',
     icon: '📖',
@@ -745,7 +745,7 @@ function renderProject(p) {
   const projectDesc = esc(p.description || '').replace(/\n/g, '<br>');
   const isMinimalProject = !!p.showOnlyGalleryAndReferences;
   const isFloraProject = !!p.floraLayout;
-  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || '')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
+  const galleryThumbHTML = (img) => `<div class="gallery-thumb" data-gallery-src="${esc(img.src)}" data-gallery-caption="${esc(img.caption || '')}" tabindex="0" role="button"><img src="${esc(img.src)}" alt="${esc(img.caption || 'Imagen de galería')}" loading="eager" decoding="async" fetchpriority="high"/><div class="gallery-thumb-overlay"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>`;
   const renderImageSection = (title, images, scope) => {
     if (!images?.length) return '';
     const hasMore = images.length > 10;
