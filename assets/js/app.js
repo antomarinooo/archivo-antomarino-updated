@@ -539,6 +539,41 @@ stage1: {
 ],
   },
   {
+    id: 'p5',
+    slug: 'examen-tg2',
+    number: '04',
+    title: 'Examen Taller Gráfico II',
+    subject: 'Taller Gráfico II',
+    icon: '⚡',
+    year: '2026',
+    parte: 'Examen',
+    tags: ['Examen', 'Taller Gráfico II', 'La Torre', 'Tarot'],
+    cover: 'assets/proyectos/examen-tg2/img/tg2-examen-investigacion-3.jpg',
+    gallery: [
+      { src: 'assets/proyectos/examen-tg2/img/tg2-examen-investigacion-1.png', caption: 'Investigación Examen Taller Gráfico II — lámina 1' },
+      { src: 'assets/proyectos/examen-tg2/img/tg2-examen-investigacion-2.png', caption: 'Investigación Examen Taller Gráfico II — lámina 2' },
+      { src: 'assets/proyectos/examen-tg2/img/tg2-examen-investigacion-3.jpg', caption: 'Investigación Examen Taller Gráfico II — lámina 3' },
+      { src: 'assets/proyectos/examen-tg2/img/tg2-examen-investigacion-4.jpg', caption: 'Investigación Examen Taller Gráfico II — lámina 4' },
+    ],
+    pdfs: [
+      {
+        src: 'assets/proyectos/examen-tg2/investigacion-examen-tg2.pdf',
+        label: 'Investigación Examen Taller Gráfico II',
+        description: 'PDF · investigación completa',
+      },
+    ],
+    references: [
+      { text: 'Daley, J. (2025, 28 de marzo). Tower tarot card meanings with infographic. PlayingCardDecks.com.', url: 'https://playingcarddecks.com/blogs/news/tower-tarot-card-meanings-with-infographic' },
+      { text: 'Lequart. (1890). T16 Tarot.png [Carta de tarot, La Torre, Tarot de Marsella]. Wikimedia Commons.', url: 'https://commons.wikimedia.org/wiki/File:T16_Tarot.png' },
+      { text: 'Manasses, C. (siglo XIV). Construction and destruction of the Tower of Babel [Miniatura de la Crónica de Manasés]. Wikimedia Commons.', url: 'https://commons.wikimedia.org/wiki/File:08-manasses-chronicle.jpg' },
+      { text: 'Pérez León, C. (2024). La Torre: significado, número y signo que representa. Lecturas.', url: 'https://www.lecturas.com/horoscopo/astrologia/torre-tarot-significado-numero-y-signo-que-representa_141348' },
+      { text: 'Prado, T. (2015, 10 de marzo). La Torre y su implicancia en el tarot. Tarot de Tiziana.', url: 'https://tarotdetiziana.com/la-torre-y-su-implicancia-en-el-tarot/' },
+      { text: 'Smith, P. C. (1910). RWS Tarot 16 Tower [Carta de tarot, La Torre, Rider-Waite-Smith]. Wikimedia Commons.', url: 'https://commons.wikimedia.org/wiki/File:RWS_Tarot_16_Tower.jpg' },
+      { text: 'The Tower of Babel [Pintura de Pieter Bruegel el Viejo]. (1563). Wikimedia Commons.', url: 'https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg' },
+      { text: 'The Tower (Major Arcana), Swiss 1JJ Tarot [Carta de tarot]. (ca. 1831–1838). Wikimedia Commons.', url: 'https://commons.wikimedia.org/wiki/File:1JJ_Tarot_-_Trump_16_-_French_-_La_Maison_de_Dieu.jpg' },
+    ],
+  },
+  {
     id: 'p4',
     slug: 'proyecto-editorial-tgii',
     number: '03',
@@ -1515,7 +1550,7 @@ async function renderPDF(src, cid) {
     await page.render({canvasContext:canvas.getContext('2d'),viewport:vp}).promise;
     el.appendChild(canvas);
   } catch(e){
-    el.innerHTML=`<div class="pdf-loading">No se pudo cargar la lámina. Probá abrir el archivo en una pestaña nueva: <a href="${esc(src)}" target="_blank" rel="noopener">abrir PDF</a>.</div>`;
+    el.innerHTML=`<div class="pdf-loading">No se pudo cargar la lámina. Prueba abrir el archivo en una pestaña nueva: <a href="${esc(src)}" target="_blank" rel="noopener">abrir PDF</a>.</div>`;
   }
 }
 
